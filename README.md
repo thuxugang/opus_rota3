@@ -6,14 +6,39 @@ Side-chain modeling is critical for protein structure prediction since the uniqu
 
 ### Train & Val:
 
-The training and validation sets for OPUS-RotaNN are the same as that for OPUS-TASS, which are hosted on [Baidu Drive](https://pan.baidu.com/s/1L6w_qBIKvleO2uFr1Ekevw) with password `zmc1`. Also, they can be downloaded directly from [Here](http://ma-lab.rice.edu/MaLab/dist/opus_tass_datasets.zip). More details can be found [here](https://github.com/thuxugang/opus_tass).
+The training and validation sets for OPUS-RotaNN are the same as that for OPUS-TASS, which are hosted on [Baidu Drive](https://pan.baidu.com/s/1L6w_qBIKvleO2uFr1Ekevw) with password `zmc1`. Also, they can be downloaded directly from [Here](http://ma-lab.rice.edu/MaLab/dist/opus_tass_datasets.zip). More details can be found in [OPUS-TASS](https://github.com/thuxugang/opus_tass) repo.
+
+The CSF120 features for the training and validation sets are hosted on [Baidu Drive](https://pan.baidu.com/s/15pfFzL4kaYdaV8A37BwqPw) with password `7bmi`. Also, they can be downloaded directly from [Here](xxx) (Comeing soon).
 
 ### Test2016 & CASP-FM & CAMEO-Hard61
 
-The side-chain dihedrals of these three sets can be found [here](https://github.com/thuxugang/opus_rota3/tree/master/testsets).
-
- .dihedrals (resid resname x1 x2 x3 x4): 181: Missing atoms for calculation 182: X doesn't exist
+The pdb files of these three sets are hosted on [Baidu Drive](https://pan.baidu.com/s/1mwsG6OeuOwzmHsWkN1EAJQ) with password `em4s`. Also, they can be downloaded directly from [Here](xxx) (Comeing soon).
 
 ### DB379 & DB379-ITASSER:
 
 These two sets can be downloaded from FASPR paper.
+
+## OPUS-RotaNN
+
+### Dependency
+
+```
+Python 3.7
+TensorFlow v2.0
+xssp-3.0.10
+```
+
+The standalone version of OPUS-RotaNN (including training & inference codes) is hosted on [Baidu Drive](https://pan.baidu.com/s/11UO508bMR9rOfUYLBA_2fA) with password `3l8k`. Also, it can be downloaded directly from [Here](xxx) (Comeing soon).
+
+Note that for higher speed, we simply the calculation in xssp source code. The pipeline for recompiling the xssp is as following:
+
+```
+cd mkdssp
+tar zxvf xssp-3.0.10.tar.gz
+cp dssp.cpp xssp-3.0.10/src/
+cd xssp-3.0.10/
+./autogen.sh
+./configure
+make mkdssp
+```
+
