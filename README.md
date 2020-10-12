@@ -28,9 +28,11 @@ TensorFlow v2.0
 xssp-3.0.10
 ```
 
-The standalone version of OPUS-RotaNN (including training & inference codes) is hosted on [Baidu Drive](https://pan.baidu.com/s/11UO508bMR9rOfUYLBA_2fA) with password `3l8k`. Also, it can be downloaded directly from [Here](xxx) (Comeing soon).
+The training & inference codes of OPUS-RotaNN can be found [Here](https://github.com/thuxugang/opus_rota3/tree/master/OPUS-RotaNN).
 
-Note that for higher speed, we simply the calculation in xssp source code. The pipeline for recompiling the xssp is as following:
+The standalone version of OPUS-RotaNN (including pre-trained models, the tmp_files and the results for CASP-FM) is hosted on [Baidu Drive](https://pan.baidu.com/s/11UO508bMR9rOfUYLBA_2fA) with password `3l8k`. Also, it can be downloaded directly from [Here](xxx) (Comeing soon).
+
+Note that for higher speed, we simplify the calculation in xssp. The pipeline for recompiling the xssp is as following:
 
 ```
 cd mkdssp
@@ -41,4 +43,8 @@ cd xssp-3.0.10/
 ./configure
 make mkdssp
 ```
+
+## OPUS-Rota3v and OPUS-Rota3 (To be done)
+
+## Performance (To be done)
 
