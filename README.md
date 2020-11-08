@@ -65,6 +65,10 @@ The executable oscar-star file we downloaded from [OSCAR-star website](https://s
 
 The source code we downloaded from [FASPR](https://github.com/tommyhuangthu/FASPR) can be found in *OPUS-Rota3/FASPR* folder. For higher speed, we modified the source code. You can recompile it following their instruction.
 
+#### OPUS-Rota2
+
+The information of OPUS-Rota2 can be found [here](https://github.com/thuxugang/opus_rota2).
+
 ### Usage
 
 1. Database preparation.
