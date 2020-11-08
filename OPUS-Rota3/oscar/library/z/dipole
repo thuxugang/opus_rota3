@@ -1,0 +1,271 @@
+RESI   ALA
+ATOM   N   2 CA  H       N2
+ATOM   CA  3 CB  N   C   C1
+ATOM   C   2 O   CA      C
+ATOM   O   1 C           O
+ATOM   H   1 N           H
+ATOM   CB  1 CA          C3
+   
+RESI   ARG
+ATOM   N   2 CA  H       N2
+ATOM   CA  3 CB  N   C   C1
+ATOM   C   2 O   CA      C
+ATOM   O   1 C           O
+ATOM   H   1 N           H
+ATOM   CB  2 CA  CG      C2
+ATOM   CG  2 CB  CD      C2
+ATOM   CD  2 CG  NE      C2
+ATOM   NE  2 NH1 NH2     N2
+ATOM   HE  1 NE          HC
+ATOM   CZ  2 NH1 NH2     C
+ATOM   NH1 2 NH2 NE      N2
+ATOM   HH1 1 NH1         HC
+ATOM   HH1 1 NH1         HC
+ATOM   NH2 2 NH1 NE      N2
+ATOM   HH2 1 NH2         HC
+ATOM   HH2 1 NH2         HC
+
+RESI   ASN
+ATOM   N   2 CA  H       N2
+ATOM   CA  3 CB  N   C   C1
+ATOM   C   2 O   CA      C
+ATOM   O   1 C           O
+ATOM   H   1 N           H
+ATOM   CB  2 CA  CG      C2
+ATOM   CG  2 ND2 OD1     C
+ATOM   OD1 1 CG          O
+ATOM   ND2 2 CB  OD1     N2
+ATOM   HD2 1 ND2         H
+ATOM   HD2 1 ND2         H
+   
+RESI   ASP
+ATOM   N   2 CA  H       N2
+ATOM   CA  3 CB  N   C   C1
+ATOM   C   2 O   CA      C
+ATOM   O   1 C           O
+ATOM   H   1 N           H
+ATOM   CB  2 CA  CG      C2
+ATOM   CG  2 OD1 OD2     CG
+ATOM   OD1 1 CG          OC
+ATOM   OD2 1 CG          OC
+   
+RESI   CYS
+ATOM   N   2 CA  H       N2
+ATOM   CA  3 CB  N   C   C1
+ATOM   C   2 O   CA      C
+ATOM   O   1 C           O
+ATOM   H   1 N           H
+ATOM   CB  2 CA  SG      C2
+ATOM   SG  1 CB          SG
+   
+RESI   GLN
+ATOM   N   2 CA  H       N2
+ATOM   CA  3 CB  N   C   C1
+ATOM   C   2 O   CA      C
+ATOM   O   1 C           O
+ATOM   H   1 N           H
+ATOM   CB  2 CA  CG      C2
+ATOM   CG  2 CB  CD      C2
+ATOM   CD  2 OE1 NE2     C
+ATOM   OE1 1 CD          O
+ATOM   NE2 2 OE1 CG      N2
+ATOM   HE2 1 NE2         H
+ATOM   HE2 1 NE2         H
+   
+RESI   GLU
+ATOM   N   2 CA  H       N2
+ATOM   CA  3 CB  N   C   C1
+ATOM   C   2 O   CA      C
+ATOM   O   1 C           O
+ATOM   H   1 N           H
+ATOM   CB  2 CA  CG      C2
+ATOM   CG  2 CB  CD      C2
+ATOM   CD  2 OE1 OE2     CG 
+ATOM   OE1 1 CD          OC
+ATOM   OE2 1 CD          OC
+
+RESI   GLY
+ATOM   N   2 CA  H       N2
+ATOM   CA  2 N   C       C2
+ATOM   C   2 O   CA      C
+ATOM   O   1 C           O
+ATOM   H   1 N           H
+   
+RESI   ILE
+ATOM   N   2 CA  H       N2
+ATOM   CA  3 CB  N   C   C1
+ATOM   C   2 O   CA      C
+ATOM   O   1 C           O
+ATOM   H   1 N           H
+ATOM   CB  3 CA  CG1 CG2 C1
+ATOM   CG2 1 CB          C3
+ATOM   CG1 2 CB  CD1     C2
+ATOM   CD1 1 CG1         C3
+   
+RESI   LEU
+ATOM   N   2 CA  H       N2
+ATOM   CA  3 CB  N   C   C1
+ATOM   C   2 O   CA      C
+ATOM   O   1 C           O
+ATOM   H   1 N           H
+ATOM   CB  2 CA  CG      C2
+ATOM   CG  3 CB  CD1 CD2 C1
+ATOM   CD1 1 CG          C3
+ATOM   CD2 1 CG          C3
+   
+RESI   LYS
+ATOM   N   2 CA  H       N2
+ATOM   CA  3 CB  N   C   C1
+ATOM   C   2 O   CA      C
+ATOM   O   1 C           O
+ATOM   H   1 N           H
+ATOM   CB  2 CA  CG      C2
+ATOM   CG  2 CB  CD      C2
+ATOM   CD  2 CG  CE      C2
+ATOM   CE  2 CD  NZ      C2
+ATOM   NZ  1 CE          N3
+ATOM   HZ  1 NZ          HC
+ATOM   HZ  1 NZ          HC
+ATOM   HZ  1 NZ          HC
+   
+RESI   MET
+ATOM   N   2 CA  H       N2
+ATOM   CA  3 CB  N   C   C1
+ATOM   C   2 O   CA      C
+ATOM   O   1 C           O
+ATOM   H   1 N           H
+ATOM   CB  2 CA  CG      C2
+ATOM   CG  2 CB  SD      C2
+ATOM   SD  2 CG  CE      SD
+ATOM   CE  1 SD          C3
+   
+RESI   PHE
+ATOM   N   2 CA  H       N2
+ATOM   CA  3 CB  N   C   C1
+ATOM   C   2 O   CA      C
+ATOM   O   1 C           O
+ATOM   H   1 N           H
+ATOM   CB  2 CA  CG      C2
+ATOM   CG  2 CD1 CD2     CG
+ATOM   CD1 2 CG  CE1     CR
+ATOM   CD2 2 CG  CE2     CR
+ATOM   CE1 2 CD1 CZ      CR
+ATOM   CE2 2 CD2 CZ      CR
+ATOM   CZ  2 CE1 CE2     CR 
+   
+RESI   PRO
+ATOM   N   2 CA  CD      N2
+ATOM   CA  3 CB  N   C   C1
+ATOM   C   2 O   CA      C
+ATOM   O   1 C           O
+ATOM   CD  2 N   CG      C2
+ATOM   CB  2 CG  CA      C2
+ATOM   CG  2 CD  CB      C2
+   
+RESI   SER
+ATOM   N   2 CA  H       N2
+ATOM   CA  3 CB  N   C   C1
+ATOM   C   2 O   CA      C
+ATOM   O   1 C           O
+ATOM   H   1 N           H
+ATOM   CB  2 CA  OG      C2
+ATOM   OG  2 CB  HG      OG
+ATOM   HG  1 OG          H
+   
+RESI   THR
+ATOM   N   2 CA  H       N2
+ATOM   CA  3 CB  N   C   C1
+ATOM   C   2 O   CA      C
+ATOM   O   1 C           O
+ATOM   H   1 N           H
+ATOM   CB  3 OG1 CA  CG2 C1
+ATOM   OG1 2 CB  HG1     OG
+ATOM   CG2 1 CB          C3
+ATOM   HG1 1 OG1         H
+   
+RESI   TRP
+ATOM   N   2 CA  H       N2
+ATOM   CA  3 CB  N   C   C1
+ATOM   C   2 O   CA      C
+ATOM   O   1 C           O
+ATOM   H   1 N           H
+ATOM   CB  2 CA  CG      C2
+ATOM   CG  2 CD1 CD2     CG
+ATOM   CD2 2 CE3 CG      CG
+ATOM   CE2 2 CZ2 NE1     CG
+ATOM   CE3 2 CD2 CZ3     CR
+ATOM   CD1 2 CG  NE1     CR
+ATOM   NE1 2 CD1 CE2     N2
+ATOM   HE1 1 NE1         H
+ATOM   CZ2 2 CH2 CE2     CR
+ATOM   CZ3 2 CE3 CH2     CR
+ATOM   CH2 2 CZ2 CZ3     CR
+
+RESI   TYR
+ATOM   N   2 CA  H       N2
+ATOM   CA  3 CB  N   C   C1
+ATOM   C   2 O   CA      C
+ATOM   O   1 C           O
+ATOM   H   1 N           H
+ATOM   CB  2 CA  CG      C2
+ATOM   CG  2 CD1 CD2     CG
+ATOM   CD1 2 CG  CE1     CR
+ATOM   CE1 2 CD1 CZ      CR
+ATOM   CD2 2 CE2 CG      CR
+ATOM   CE2 2 CD2 CZ      CR
+ATOM   CZ  2 CE1 CE2     CG
+ATOM   OH  2 CZ  HH      OG
+ATOM   HH  1 OH          H
+   
+RESI   VAL
+ATOM   N   2 CA  H       N2
+ATOM   CA  3 CB  N   C   C1
+ATOM   C   2 O   CA      C
+ATOM   O   1 C           O
+ATOM   H   1 N           H
+ATOM   CB  3 CA  CG1 CG2 C1
+ATOM   CG1 1 CB          C3
+ATOM   CG2 1 CB          C3
+   
+RESI   HIS
+ATOM   N   2 CA  H       N2
+ATOM   CA  3 CB  N   C   C1
+ATOM   C   2 O   CA      C
+ATOM   O   1 C           O
+ATOM   H   1 N           H
+ATOM   CB  2 CA  CG      C2
+ATOM   CG  2 ND1 CD2     CG
+ATOM   CD2 2 CG  NE2     CR
+ATOM   ND1 2 CE1 CG      N2
+ATOM   HD1 1 ND1         H
+ATOM   CE1 2 NE2 ND1     CR
+ATOM   NE2 2 CE1 CD2     NE
+
+RESI   HSD
+ATOM   N   2 CA  H       N2
+ATOM   CA  3 CB  N   C   C1
+ATOM   C   2 O   CA      C
+ATOM   O   1 C           O
+ATOM   H   1 N           H
+ATOM   CB  2 CA  CG      C2
+ATOM   CG  2 ND1 CD2     CG
+ATOM   CD2 2 CG  NE2     CR
+ATOM   ND1 2 CE1 CG      NE
+ATOM   CE1 2 NE2 ND1     CR
+ATOM   NE2 2 CE1 CD2     N2
+ATOM   HE2 1 NE2         H
+
+RESI   HSC
+ATOM   N   2 CA  H       N2
+ATOM   CA  3 CB  N   C   C1
+ATOM   C   2 O   CA      C
+ATOM   O   1 C           O
+ATOM   H   1 N           H
+ATOM   CB  2 CA  CG      C2
+ATOM   CG  2 CD2 ND1     CG
+ATOM   CD2 2 CG  NE2     CR
+ATOM   ND1 2 CE1 CG      N2
+ATOM   HD1 1 ND1         H
+ATOM   CE1 2 NE2 ND1     CR
+ATOM   NE2 2 CE1 CD2     N2
+ATOM   HE2 1 NE2         H

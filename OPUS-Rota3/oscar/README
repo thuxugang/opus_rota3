@@ -1,0 +1,124 @@
+OSCAR-STAR
+README
+
+
+
+(1) Installation
+
+    (A) Make sure that all of the files mentioned in section (4) are present.
+
+
+    (B) Set the environment variable 'MULUL'
+
+            for bash users:
+                $> MULUL=<oscar-star-basepath>/library/z/
+                $> export MULUL
+
+
+            for tcsh users:
+                $> setenv  MULUL <oscar-star-basepath>/library/z/
+
+                where <oscar-star-basepath> = the absolute path where the oscar-star folder is located
+                    Example: /home/oscar-star
+
+
+            ** note: don't forget the ending '/' character when setting the 'MULUL' variable
+
+
+    (C) Compile by running 'make'
+
+            $> make
+
+
+    (D) Verify. The installation is successful if the following files were created:
+
+            library/main.o
+            library/side4.o
+            oscar-star
+
+
+
+(2) Running
+
+    (A) Make sure that the environment variable 'MULUL' is set before running oscar-star.
+
+           Note on setting environment variables:
+
+                Setting the environment variables as mentioned in section (1)(B) will only last for that one terminal session.
+                If you want to make it permanent, you need to put the export/setenv commands in your .bashrc or .profile files.
+
+
+    (B) Run oscar-star
+
+            $> ./oscar-star <pdbfile>
+
+                    Example:
+                       $> ./oscar-star example/1noa.pdb
+
+
+            $> ./oscar-star 
+
+                    A file called 'data' in the running directory contains a list of pdb files.
+
+                    Example:
+                        $> example/data
+
+
+
+(3) Outputs
+
+    (A) A model pdb file of format <pdbid-base-name>_model.pdb
+
+            Example: 1noa_model.pdb
+
+
+    (B) A file named 'result' which describes the accuracy of the model.
+
+
+
+(4) Contents
+
+    makefile
+    README
+
+    source/
+    source/main.cpp
+    source/side.h
+    source/side4.cpp
+
+    library/
+    library/z/bbdep02.May.lib
+    library/z/dipole
+    library/z/parametersf
+    library/z/rotamer
+    library/z/torsion
+
+    example/
+    example/1noa.pdb
+    example/1whi.pdb
+    example/data
+
+
+
+(5) Notes
+
+    (A) In cases where only a small part of the protein is  modeled, set the 80th column of the 
+        pdb file of the non-modeled part to 'X' as follows:
+
+            ATOM      1  N   ALA A   1       7.672 -12.002  34.411                         X
+
+        The polar hydrogen atoms should be added for the non-modeled part before calculation.   
+
+    (B) The upper limit of the size of the  modeled protein is 3000 residues or 30000 atoms.
+
+
+    (C) The program is free only for academic users.
+
+
+    (D) When doing fresh installations, make sure that the following files are not present:
+
+            library/main.o
+            library/side4.o
+            oscar-star
+
+
