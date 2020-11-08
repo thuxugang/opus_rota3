@@ -142,5 +142,76 @@ The source code we downloaded from [FASPR](https://github.com/tommyhuangthu/FASP
    If you want to use the results from OPUS-RotaNN, please set `use_rotann=1` and maintain the `rotann_list.txt` in `tmp_dir` as `use_others`. Note that the different between `use_others` and `use_rotann` is `.dihedrals` uses real resid in backbone file and `use_rotann` uses the resid starting from 1.
    `.rota`: resid starting from 1, resname, chi1, chi2, chi3, chi4 (181: Missing atoms for calculation 182: chi doesn't exist).
 
-## Performance (To be done)
+## Performance
 
+### Performance of different predictors on TEST2016
+
+|Predictors |MAE (χ1)	|MAE (χ2)	|MAE (χ3)	|MAE (χ4)	|ACC|
+|:----:|:----:|:----:|:----:|:----:|:----:|
+|OPUS-RotaNN	|24.75 	|36.64 	|51.62 	|51.65 	|46.26%|
+|RotamerLib |34.72 	|46.34 	|53.60 	|54.82 	|46.73%|
+|SCWRL4|22.12 |	37.37 |	49.76 |	53.97 	|57.72%|
+|FASPR|21.79 |	36.97 |	49.45 |	54.86 |	57.80%|
+|OSCAR-star |19.74 	|35.85 |	47.90 	|53.30 	|58.99%|
+
+### Performance of different predictors on DB379
+
+|Predictors |MAE (χ1)	|MAE (χ2)	|MAE (χ3)	|MAE (χ4)	|ACC|
+|:----:|:----:|:----:|:----:|:----:|:----:|
+|RotamerLib |34.47 |	45.38 |	56.50 |	53.28 	|46.82%|
+|FASPR |21.52 |	36.41 |	53.09 	|53.45 |	57.98%|
+|SCWRL4 |21.99 |	36.89 	|52.84 |	52.55 |	58.03%|
+|OSCAR-star |19.48 |	35.71 |	51.67 	|52.05 |	59.02%|
+|OPUS-Rota3v	|18.98 	|33.37 |	49.80 |	52.06 |	60.50%|
+|OPUS-Rota3	|17.52 |	32.85 |	48.96 |	50.42 |	61.52%|
+
+
+### Performance of different predictors on CASP-FM
+
+|Predictors |MAE (χ1)	|MAE (χ2)	|MAE (χ3)	|MAE (χ4)	|ACC|
+|:----:|:----:|:----:|:----:|:----:|:----:|
+|OPUS-RotaNN|	29.41 |	38.95| 	53.26 	|49.19 |	42.86%|
+|RotamerLib |38.07 |	47.53 |	55.65 |	52.86 |	44.95%|
+|FASPR |26.63 |	39.75 |	53.40 	|54.81 |	53.11%|
+|SCWRL4|27.09 |	40.44 |	52.67 |	54.61 |	53.17%|
+|OSCAR-star|24.63 |	37.68 |	50.61 |	53.35 |	54.84%|
+|OPUS-Rota3v|	23.05 |	36.05 |	50.82 |	53.63 |	56.65%|
+|OPUS-Rota3|	21.38 |	34.50 |	49.07 |	51.51 |	58.05%|
+|OPUS-Rota3 (w/ RotaNN)|	21.30 	|33.61 	|49.07 	|51.48 	|58.56%|
+
+
+### Performance of different predictors on CAMEO-Hard61
+
+|Predictors |MAE (χ1)	|MAE (χ2)	|MAE (χ3)	|MAE (χ4)	|ACC|
+|:----:|:----:|:----:|:----:|:----:|:----:|
+|OPUS-RotaNN	|32.73 	|42.18| 	56.37 	|51.01 |	38.51%|
+|RotamerLib |41.39 |	50.25 |	58.52 	|54.44| 	40.44%|
+|FASPR |28.47 	|42.03 	|55.52 |	56.91| 	49.85%|
+|OPUS-Rota3v|	28.15 |	41.97 	|55.76 |	57.07 |	50.24%|
+|SCWRL4 |28.26 |	42.35| 	55.96 	|55.97 |	50.40%|
+|OSCAR-star |26.33 	|41.47| 	55.07 |	56.44 |	50.87%|
+|OPUS-Rota3 (w/ RotaNN)|	26.28 |	41.43 |	55.21 |	56.46 |	51.14%|
+|OPUS-Rota3	|26.29 |	41.48 |	55.26 |	56.49 |	51.16%|
+
+### Performance of different predictors on DB379-ITASSER (***Non-Native Backbone Test Set***)
+
+|Predictors |MAE (χ1)	|MAE (χ2)	|MAE (χ3)	|MAE (χ4)	|ACC|
+|:----:|:----:|:----:|:----:|:----:|:----:|
+|RotamerLib |43.10 |	47.64 |	56.94 |	53.27 	|40.61%|
+|SCWRL4 |33.29 	|42.74 |	56.17 |	55.52 	|48.29%|
+|FASPR |32.59 	|42.05 	|57.05 |	55.69 	|48.69%|
+|OSCAR-star |30.78 	|42.45 	|56.07 	|55.74 	|48.95%|
+|OPUS-Rota3v	|28.33 	|38.84 |	53.64 	|54.49 	|51.88%|
+|OPUS-Rota3	|27.05 	|39.08 |	53.41 	|54.30 |	52.28%|
+
+
+## Reference 
+```bibtex
+@article{xu2020opus4,
+  title={OPUS-Rota3: Improving Protein Side-Chain Modeling by Deep Neural Networks and Ensemble Methods},
+  author={Xu, Gang and Wang, Qinghua and Ma, Jianpeng},
+  journal={Journal of Chemical Information and Modeling},
+  year={2020},
+  publisher={ACS Publications}
+}
+```
